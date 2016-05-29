@@ -9,4 +9,3 @@
 1 All	All	GTD	Rating L	C	C
 8 Hd	STB/Other TTd LT	ST POL	Rating L	C	C Expected 1
 11 Hd	TTd LT	POL	Rating L	C	C Expected 5
-​

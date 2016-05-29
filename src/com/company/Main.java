@@ -17,4 +17,14 @@ public class Main {
         }
         br.close();
     }
+
+    public static void readTestCasesFromFile(String filePath, int numberOfLines) throws IOException {
+        FileInputStream fs = new FileInputStream(filePath);
+        BufferedReader br = new BufferedReader(new InputStreamReader(fs));
+        for (int i = 0; i < numberOfLines + 1; i++) {
+            //br.readLine();
+            System.out.println(br.readLine());
+        }
+        br.close();
+    }
 }
