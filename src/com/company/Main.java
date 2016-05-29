@@ -13,8 +13,11 @@ public class Main {
         System.out.println("Enter number of lines to read (int value) or send empty line for default value");
         Scanner scanner2 = new Scanner(System.in);
         int i = 10;
-        if (!scanner2.nextLine().equals("")) {
-            i = scanner2.nextInt();
+        String sc2 = scanner2.nextLine();
+        if (sc2.equals("")) {
+            scanner2.close();
+        } else {
+            i = Integer.parseInt(sc2);
         }
         System.out.println(s);
         System.out.println(i);
