@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="PenTests">
+
+    <test name="ColorTest">
+        <parameter name="color" value="RED"/>
+        <parameter name="inkContainer" value="500"/>
+        <parameter name="sizeLetter" value="1.0"/>
+        <classes>
+            <class name="PenColorTest" />
+        </classes>
+    </test>
+
+    <test name="IsWorkTest">
+        <parameter name="inkContainer" value="0"/>
+        <classes>
+            <class name="PenIsWorkTest" />
+        </classes>
+    </test>
+
+    <test name="WriteTest">
+        <parameter name="inkContainer" value="500"/>
+        <parameter name="sizeLetter" value="1.0"/>
+        <parameter name="word" value="someWord"/>
+        <classes>
+            <class name="PenWriteTest" />
+        </classes>
+    </test>
+
+</suite>
